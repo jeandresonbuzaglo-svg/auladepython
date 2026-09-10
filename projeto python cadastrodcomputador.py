@@ -8,5 +8,5 @@ valor = 2500.00
 print("Marca:", marca)
 print("Modelo:", modelo)
 print("Memória:", memoria_gb, "gb")
-print("Armazenamento:", armazenamento_gb, "gb")
+print("Armazenamento:", armazenamento_Gb, "gb")
 print("Valor: R$", valor)
