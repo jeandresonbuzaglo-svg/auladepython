@@ -17,7 +17,7 @@ elif tipo_problema == 4:
 else:
     situacao = (" Opção Inválida! Preste atenção..")
 
-print("\n--- Chamado de suporte técnico ao usuario ---")
+print("--- Chamado de suporte técnico ao usuario ---")
 print("nome do usuario:", nome)
 print("Prioridade do Problema:", tipo_problema)
 print("Situação:", situacao)

@@ -10,7 +10,7 @@ elif velocidade <= 500:
 else:
     plano = "Plano Ultra"
 
-print("\n--- Velocidade Contratada do Cliente ---")
+print("--- Velocidade Contratada do Cliente ---")
 print("nome do Cliente:", nome)
 print("Velocidade Contratada:", velocidade, "Mbps")
 print("Tipos de planos:", plano)

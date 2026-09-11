@@ -10,7 +10,7 @@ elif quantidade <= 20:
 else:
     situacao = "Estoque normal"
 
-print("\n--- Situação do Estoque ---")
+print("--- Situação do Estoque ---")
 print("Produto:", produto)
 print("Quantidade disponível:", quantidade)
 print("Situação:", situacao)
