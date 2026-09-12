@@ -3,4 +3,4 @@ idade = 18
 curso = "informatica"
 print ("nome:", nome)
 print ("idade:", idade)
-print ("curso:", Informatica)
+print ("curso:", curso)
