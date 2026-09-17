@@ -1,4 +1,4 @@
-for contador in range (1,10):
+for contador in range (10,0,-1):
     print(contador)
 print("Fim da contagem!")
 
