@@ -54,8 +54,19 @@ contador = 1
 
 while contador <=5: 
     idade = int(input("Digite a idade: "))
-    while nota < 0 or nota > 120:
+    while idade < 0 or idade > 120:
         print("idade inválida")
   
     contador = contador + 1
 print("Cadastro finalizado!")
+
+#6 exercicio de senha
+
+senha = ""
+while senha != "1234":
+    senha = input("Digite a senha: ")
+print ("Acesso permitido!")
+
+
+
+
