@@ -12,7 +12,9 @@ while True:
 
     opcao = input("Escolha uma opção: ")
 
-# CREATE - CADASTRO DE LIVRO
+    print("________________________________________")
+
+    # CREATE - CADASTRAR LIVRO
 
     if opcao == "1":
         codigo = int(input("Código: "))
@@ -24,35 +26,93 @@ while True:
 
         biblioteca.append(livro)
 
-        print("Livro cadastrado!")
-        print("biblioteca")
-
-
-# READ - LISTA E PESQUISAR
-
-    for livro in biblioteca:
-        print("Código:" , livro[0])
-        print("Título:" , livro[1])
-        print("Autor:" , livro[2])
-        print("Ano:" , livro[3])
-        print("__________")
-    codigo_busca = int(input("Digite o código: "))
-
-    for livro in biblioteca:
-        if livro[0] == codigo_busca:
-            print("Livro encontrado!")
-            print("Título:, livro[1]")
-            print("Autor:, livro[2]")
-            print("Ano:, livro[1]")
+        print("Livro cadastrado com sucesso!")
+        print("biblioteca Jeandreson buzaglo araujo")
+        print("_____________________________________")
 
 
 
 
+    # READ - LISTAR 
+    elif opcao == "2":
+        if len(biblioteca) == 0:
+            print("Nenhum livro cadastrado.")
+        else:
+            print("___________Livros cadastrados_____________________") 
 
-
-
-
-
-
+            for livro in biblioteca:
+                print("Código:" , livro[0])
+                print("Título:" , livro[1])
+                print("Autor:" , livro[2])
+                print("Ano:" , livro[3])
+                print("Listado com sucesso")
+                print("__________")
+                
+       
 
                
+    # READ - PESQUISAR CÓDIGO  
+    elif opcao == "3":
+        codigo_busca = int(input("Digite o código do livro: "))
+ 
+        
+        for livro in biblioteca:
+            if livro[0] == codigo_busca:
+                 print("\nLivro encontrado em nossa biblioteca!")
+                 print("Código:", livro[0])
+                 print("Título:", livro[1])
+                 print("Autor:", livro[2])
+                 print("Ano:", livro[3])
+ 
+               
+ 
+            else:
+             print("Livro não encontrado.")
+ 
+ 
+ 
+               
+
+    # UPDATE - ALTERAR
+    elif opcao == "4":
+        codigo_busca = int(input("Digite o código do livro: "))
+        
+        for livro in biblioteca:
+            if livro[0] == codigo_busca:
+                        print("Livro encontrado!")
+                        print("Fazer Alteração do livro ")
+        
+                        livro[1] = input("Novo título: ")
+                        livro[2] = input("Novo autor: ")
+                        livro[3] = int(input("Novo ano: "))
+        
+                        print("Livro atualizado com sucesso!")
+        
+                               
+            else:
+                        print("Livro não encontrado.")
+                        print("Favor verificar o código do livro")
+
+
+    # DELETE - EXCLUIR
+    elif opcao == "5":
+
+        codigo_busca = int(input("Digite o código do livro: "))
+                 
+        for livro in biblioteca:
+            if livro[0] == codigo_busca:
+                        biblioteca.remove(livro)
+                        print("Livro excluído com sucesso")
+                        print("_____________________________")
+                        break                
+                                  
+
+    # SAIR - ENCERRA O WHILE
+
+    elif opcao == "6":
+        print("Programa encerrado.")
+    else:
+        print("Opção inválida!")
+   
+
+
